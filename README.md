@@ -51,9 +51,9 @@ or(f1,p,q,r);
 //type code for f2 as like f1
 endmodule
 ```
-Developed by:Akshara C
+Developed by:Aravindkumar sasikumar samundi
 
-RegisterNumber:212223220004
+RegisterNumber:212223110004
 
 
 **Output:**
