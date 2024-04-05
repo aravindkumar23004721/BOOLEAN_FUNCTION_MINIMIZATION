@@ -33,33 +33,24 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
-Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
-```
-module booleanfunction_top(a,b,c,d,w,x,y,z,f1,f2);
-input a,b,c,d,w,x,y,z;
-output f1,f2;
-wire adash,bdash,cdash,ddash,ydash,p,q,r,s,t,u;
-not(adash,a);
-not(bdash,b);
-not(cdash,c);
-not(ddash,d);
-not(ydash,y);
-and(p,bdash,ddash);
-and(q,adash,b,d);
-and(r,a,b,cdash);
-or(f1,p,q,r);
-//type code for f2 as like f1
-endmodule
-```
-Developed by:Aravindkumar sasikumar samundi
+/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+![WhatsApp Image 2024-03-23 at 20 29 42_1d4b538d](https://github.com/Akshayasakthivels/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870561/55e59510-7b32-4aa3-9933-2d34045e8c6f)
 
-RegisterNumber:212223110004
+Developed by:Akshaya.S
+RegisterNumber:*/212223220006
+
+**Truth Table**
+
+![WhatsApp Image 2024-03-23 at 20 29 44_0307ff90](https://github.com/Akshayasakthivels/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870561/fb0faeab-c5d7-4c7f-8c06-814e0c87266a)
+
+**RTL realization**
+![WhatsApp Image 2024-03-23 at 20 29 41_7deb77cd](https://github.com/Akshayasakthivels/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870561/187b0ec5-7924-48d0-b68c-a6738a6f06e2)
 
 
 **Output:**
-![WhatsApp Image 2024-03-15 at 15 14 03_00718e1f](https://github.com/Aksharachinnadurai/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870748/73e8327a-00e4-4bee-b849-2130d4dcb01c)
+![WhatsApp Image 2024-03-23 at 20 29 39_9201378e](https://github.com/Akshayasakthivels/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870561/6318bb43-20e5-4886-945d-b934a2a82639)
 
-**Result:**
-
-Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
+**Result**
+Thus the given logic functions are implemented using and their operations are verified
+using Verilog programming.
 
