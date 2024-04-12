@@ -32,25 +32,45 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
+```
+//Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
-![WhatsApp Image 2024-03-23 at 20 29 42_1d4b538d](https://github.com/Akshayasakthivels/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870561/55e59510-7b32-4aa3-9933-2d34045e8c6f)
+Developed by:Aravindkumar SS RegisterNumber:212223110004
 
-Developed by:Aravindkumar SS
-RegisterNumber: 212223110004
+module booleanfunction(a,b,c,d,w,x,y,z,f1,f2);
+input a,b,c,d,w,x,y,z;
+output f1,f2;
+wire adash,bdash,cdash,ddash,ydash,p,q,r,s,t,u;
+not(adash,a);
+not(bdash,b);
+not(cdash,c);
+not(ddash,d);
+not(ydash,y);
+and(p,bdash,ddash);
+and(q,adash,b,d);
+and(r,a,b,cdash);
+or(f1,p,q,r);
+and G1(s,ydash,z);
+and G2(t,x,y);
+and G3(u,w,y);
+or G4(f2,s,t,u);
+endmodule
 
-**Truth Table**
+```
 
-![WhatsApp Image 2024-03-23 at 20 29 44_0307ff90](https://github.com/Akshayasakthivels/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870561/fb0faeab-c5d7-4c7f-8c06-814e0c87266a)
+![image](https://github.com/narenm03/BOOLEAN_FUNCTION_MINIMIZATION/assets/152469427/a1b896fc-aa8e-4df2-94a2-353ac7969625)
 
 **RTL realization**
-![WhatsApp Image 2024-03-23 at 20 29 41_7deb77cd](https://github.com/Akshayasakthivels/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870561/187b0ec5-7924-48d0-b68c-a6738a6f06e2)
+
+![image](https://github.com/narenm03/BOOLEAN_FUNCTION_MINIMIZATION/assets/152469427/437f7c92-97e3-49cc-b06c-4b8fb740dcad)
 
 
 **Output:**
-![WhatsApp Image 2024-03-23 at 20 29 39_9201378e](https://github.com/Akshayasakthivels/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870561/6318bb43-20e5-4886-945d-b934a2a82639)
 
-**Result**
-Thus the given logic functions are implemented using and their operations are verified
-using Verilog programming.
+![image](https://github.com/narenm03/BOOLEAN_FUNCTION_MINIMIZATION/assets/152469427/02c6a945-a11b-4723-8a5f-b8f23a863afc)
+
+
+**Result:**
+
+Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
 
